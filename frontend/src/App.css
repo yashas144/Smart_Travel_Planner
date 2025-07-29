@@ -1,0 +1,339 @@
+/* App.css */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  /* Updated background */
+  background: linear-gradient(to right, #eef2f3, #8e9eab);
+  color: #333;
+  margin: 0;
+  line-height: 1.6;
+}
+
+.App {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.App-header {
+  /* Updated header styles */
+  background: linear-gradient(45deg, #4285f4, #34a853);
+  color: white;
+  padding: 2rem;
+  border-radius: 12px;
+  margin-bottom: 2rem;
+  text-align: center;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* New style for the author's name */
+.author-name {
+  margin-top: 1rem;
+  font-size: 0.9rem;
+  color: #f1f1f1;
+  font-style: italic;
+}
+
+.trip-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem; /* Increased gap */
+  max-width: 500px;
+  margin: 0 auto 2rem;
+  padding: 2rem; /* Increased padding */
+  background: white;
+  border-radius: 12px; /* Smoother corners */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-in-out;
+}
+
+.trip-form:focus-within {
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+  transform: translateY(-5px);
+}
+
+.trip-form input {
+  padding: 1rem; /* Increased padding */
+  border: 1px solid #ddd;
+  border-radius: 8px; /* Smoother corners */
+  font-size: 1rem;
+}
+
+.trip-form button {
+  padding: 1rem;
+  background-color: #34a853;
+  color: white;
+  border: none;
+  border-radius: 8px; /* Smoother corners */
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.trip-form button:hover {
+  background-color: #2d8e47;
+  transform: translateY(-2px); /* Add a subtle lift on hover */
+}
+
+.trip-form button:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+  transform: none; /* Disable hover effect when disabled */
+}
+
+.service-status {
+  background: #f8f9fa;
+  padding: 1.5rem; /* Increased padding */
+  border-radius: 12px; /* Smoother corners */
+  margin: 1rem auto;
+  max-width: 500px;
+  border-left: 5px solid #fbbc05; /* Add a distinct border */
+}
+
+.service-status h3 {
+  margin-top: 0;
+  color: #333;
+}
+
+.results {
+  margin-top: 2rem;
+}
+
+.card {
+  background: white;
+  border-radius: 12px; /* Smoother corners */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 2rem; /* Increased padding */
+  margin-bottom: 1.5rem;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* Add transition for hover effect */
+}
+
+/* Hover effect for cards */
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.summary-card {
+  background-color: #f1f8fe;
+  border-left: 5px solid #4285f4; /* Increased border width */
+}
+
+.summary-content {
+  font-size: 1.1rem;
+  line-height: 1.8;
+}
+
+.details-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem; /* Increased gap */
+}
+
+.flight-option {
+  padding: 1.5rem; /* Increased padding */
+  margin-bottom: 1rem;
+  border: 1px solid #eee;
+  border-radius: 8px; /* Smoother corners */
+  position: relative;
+  background-color: #fafafa;
+}
+
+.mock-notice {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: #fbbc05;
+  color: #333; /* Darker text for better contrast */
+  padding: 0.3rem 0.6rem;
+  font-size: 0.8rem;
+  font-weight: bold;
+  border-radius: 0 8px 0 8px; /* Match corner radius */
+}
+
+.error-message {
+  color: #d32f2f;
+  padding: 1rem;
+  background-color: #fde8e8;
+  border-radius: 8px; /* Smoother corners */
+  margin: 1rem 0;
+  border-left: 5px solid #d32f2f; /* Add a distinct border */
+  font-weight: 500;
+}
+
+@media (max-width: 768px) {
+  .details-section {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* App.css
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f5f7fa;
+  color: #333;
+  margin: 0;
+  line-height: 1.6;
+}
+
+.App {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.App-header {
+  background-color: #4285f4;
+  color: white;
+  padding: 2rem;
+  border-radius: 8px;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.trip-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  max-width: 500px;
+  margin: 0 auto 2rem;
+  padding: 1.5rem;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.trip-form input {
+  padding: 0.8rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+.trip-form button {
+  padding: 1rem;
+  background-color: #34a853;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.trip-form button:hover {
+  background-color: #2d8e47;
+}
+
+.trip-form button:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+}
+
+.service-status {
+  background: #f8f9fa;
+  padding: 1rem;
+  border-radius: 8px;
+  margin: 1rem auto;
+  max-width: 500px;
+}
+
+.service-status h3 {
+  margin-top: 0;
+}
+
+.results {
+  margin-top: 2rem;
+}
+
+.card {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.summary-card {
+  background-color: #f1f8fe;
+  border-left: 4px solid #4285f4;
+}
+
+.summary-content {
+  font-size: 1.1rem;
+  line-height: 1.8;
+}
+
+.details-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+}
+
+.flight-option {
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border: 1px solid #eee;
+  border-radius: 4px;
+  position: relative;
+}
+
+.mock-notice {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: #fbbc05;
+  color: white;
+  padding: 0.2rem 0.5rem;
+  font-size: 0.8rem;
+  border-radius: 0 4px 0 4px;
+}
+
+.error-message {
+  color: #d32f2f;
+  padding: 1rem;
+  background-color: #fde8e8;
+  border-radius: 4px;
+  margin: 1rem 0;
+}
+
+@media (max-width: 768px) {
+  .details-section {
+    grid-template-columns: 1fr;
+  }
+} */
